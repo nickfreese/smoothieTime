@@ -64,7 +64,7 @@ since if you would like to add either your own loading shield or create a loadin
 
 ```javascript
 var smoothieSettings = {
-    loadingScreen: true
+    loadingScreen: true //loading screen set to true
 };
 
 
@@ -72,14 +72,14 @@ var smoothieSettings = {
 var fruitList = {
 // line up property names with dom elements
     titleBased: {
-        apple:["page-title", "display-title-bottom"],
+        apple:["page-title", "display-title-bottom"],//puts the value of apple in each element defined by ID in the array
         pear:["some-content"],
         banana:["some-content-again"],
         styles:["server-side-styles"]
 	   },
 // the outerScript object is for dynamically populating js to the document.  These scripts can be accessed by calling "fruitList.outerScript.myScriptName".  replacing myScriptName with the name of your script.
     outerScript: {
-        yogurt:{}
+        yogurt:{}//parses JSON value of yogurt in response into value of fruitList.outerScript.yogurt
     }
 
 }
