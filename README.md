@@ -14,9 +14,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 also see the example.html file for example markup of smoothieTime integration.
 
-------------------------------------------------------------------
-------------------------------USAGE------------------------------
-------------------------------------------------------------------
+-----------------------------------------------------
+------------------------------USAGE------------------
+-----------------------------------------------------
 
 What smoothieTime Does:  You build out the "Fruitlist" Object which smoothieTime uses to apropriately parse and distribute your content/data.
 
@@ -28,19 +28,19 @@ outerScript works just the same except instead of distributing content, it distr
 
 Since smoothieTime is asyncrounous to let you refresh content when needed, you can listen for the 'blenddone' event which will be triggered when smothieTime has finished parsing your JSON response.
 
-------------------------------------------------------------------
----------------------------LOADING SHIELD-------------------
-------------------------------------------------------------------
+------------------------------------------------------
+---------------------------LOADING SHIELD-------------
+------------------------------------------------------
 
 *REQUIRED!!! include the following above smoothieTime.js:
 
-/*------------------------*/
+
 ```javascript
 var smoothieSettings = {
     loadingScreen: false
 };
 ```
-/*------------------------*/
+
 
 smoothieTime comes with a built in loading shield.  To use the shield, set the 'loadingScreen' property to 'true'.  The shield is completely CSS driven Its styles are included in  smoothieTimeCSS.  Feel free to edit to match your brand.
 
@@ -50,9 +50,10 @@ The function "toggleShield(1);" can be called to turn the loading screen on if i
 
 since if you would like to add either your own loading shield or create a loading shield that apply to individual content areas you can utilize the 'blenddone' event. Turn your shield off when your content is ready.
 
-------------------------------------------------------------------------------------------
-------------------------EXAMPLE OF FRUITLIST AND SETTINGS------------------------------
-------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+------------------------EXAMPLE OF FRUITLIST AND SETTINGS------------------------
+---------------------------------------------------------------------------------
+
 ```javascript
 var smoothieSettings = {
     loadingScreen: true
@@ -75,7 +76,7 @@ var fruitList = {
 
 }
 ```
--------------------------------------------------------------------------------------------
---------------------------------HAVE FUN!--------------------------------------------------
--------------------------------------------------------------------------------------------
+----------------------------------------------------------------
+--------------------------------HAVE FUN!-----------------------
+----------------------------------------------------------------
 
