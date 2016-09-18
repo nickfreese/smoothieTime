@@ -11,17 +11,17 @@ See the example.html file for example markup of smoothieTime integration.
 ***USAGE***
 ---------------------------------------
 
-What smoothieTime Does:  You build out the "Fruitlist" Object which smoothieTime uses to apropriately parse and distribute your content/data.
+You build out the "Fruitlist" object which smoothieTime uses to appropriately parse and distribute your content/data.
 
-Within Fruitlist you have two objects: 'titleBased' and 'outerScript'.  
+Within Fruitlist you have two objects: 'titleBased' and 'outerScript'.
 
-titleBased is used for content.  Each property should have the same name as a property in your JSON response object.  Each titleBased property should be set to an array containing the id's for each dom element to place the value of the same property in your JSON response.  
+***titleBased*** is used for content.  Each property should have the same name as a property in your JSON response object.  Each titleBased property should be set to an array containing the id's for each dom element to place the value of the same property in your JSON response.  
 
-outerScript works just the same except instead of distributing content, it distributes JavaScript.  Just line up the property names to your backend object and smoothie time will JSON parse the value of each property and place it into the corresponding outerScript property.
+***outerScript*** works just the same except instead of distributing content, it distributes JavaScript.  Just line up the property names to your backend object and smoothie time will JSON parse the value of each property and place it into the corresponding outerScript property.
 
-Since smoothieTime is asyncrounous to let you refresh content when needed, you can listen for the 'blenddone' event which will be triggered when smothieTime has finished parsing your JSON response.
+Since smoothieTime is asynchronous so you can refresh content when needed, you can listen for the 'blenddone' event which will be triggered when smoothieTime has finished parsing your JSON response.
 
-After all of the Fruitlist and setting setup (see below).  You can make a call to your server to grab your JSON using the 'orchardVisit' function.  Its parameters are as follows.
+After all of the Fruitlist and settings markup (see: EXAMPLE OF FRUITLIST AND SETTINGS).  You can make a call to your server to grab your JSON using the 'orchardVisit' function.  Its parameters are as follows.
 
 - sendOrder = The data to send
 - responseType = Datatype of response (JSON or JSONP).  Defaults to JSON.
