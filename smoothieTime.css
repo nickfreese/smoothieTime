@@ -1,0 +1,58 @@
+/*--smoothieTime CSS--*/
+
+/*-- loading screen --*/
+.shielded{
+background:rgba(255,255,255,0.9);
+position:fixed;
+width:100vw;
+height:100vh;
+top:0;
+left:0;
+}
+
+.smoothieLoader{
+background:transparent;
+width:50px;
+height:50px;
+position:absolute;
+left:0;
+right:0;
+top:0;
+bottom:0;
+margin: auto;
+border-radius:50%;
+border:20px solid transparent;
+border-top:20px solid #6557b1;
+border-bottom:20px solid #ea3f3f;
+    border-left: 20px solid #50c58f;
+    border-right: 20px solid #468ecc;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration:  1000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-transition: rotate(3600deg);
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+*/------- End Loading Screen ------*/
