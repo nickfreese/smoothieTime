@@ -16,7 +16,7 @@ The goal of smoothieTime is to create a simple way for developers to sync up wit
 See the example.html file for example markup of smoothieTime integration.
 
 ---------------------------------------
-----------------USAGE------------------
+***USAGE***------------------
 ---------------------------------------
 
 What smoothieTime Does:  You build out the "Fruitlist" Object which smoothieTime uses to apropriately parse and distribute your content/data.
@@ -45,7 +45,7 @@ orchardVisit({}, 'json', 'example.com/json.php', 0);
 ```
 
 ----------------------------------------
--------------LOADING SHIELD-------------
+***LOADING SHIELD***
 ----------------------------------------
 
 *REQUIRED!!! include the following above smoothieTime.js:
@@ -67,7 +67,7 @@ The function "toggleShield(1);" can be called to turn the loading screen on if i
 since if you would like to add either your own loading shield or create a loading shield that apply to individual content areas you can utilize the 'blenddone' event. Turn your shield off when your content is ready.
 
 -----------------------------------------------------------
--------------EXAMPLE OF FRUITLIST AND SETTINGS-------------
+***EXAMPLE OF FRUITLIST AND SETTINGS***
 -----------------------------------------------------------
 
 ```javascript
@@ -93,6 +93,6 @@ var fruitList = {
 }
 ```
 --------------------------------------------
----------------HAVE FUN!--------------------
+***HAVE FUN!***
 --------------------------------------------
 
