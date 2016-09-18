@@ -31,10 +31,10 @@ Since smoothieTime is asyncrounous to let you refresh content when needed, you c
 
 After all of the Fruitlist and setting setup (see below).  You can make a call to your server to grab your JSON using the 'orchardVisit' function.  Its parameters are as follows.
 
-- sendOrder = the data to send
-- responseType = datatype of response (JSON or JSONP)
+- sendOrder = The data to send
+- responseType = Datatype of response (JSON or JSONP).  Defaults to JSON.
 - orchard = url
-- partial = won't show loadng screen if only updating some content.  This only applies if the loading screen is enabled.
+- partial = If 0 smoothieTime shows the loading shield.  If 1 smoothieTime Won't show loadng screen.  This only applies if the loading screen is enabled.
 ```javascript
 orchardVisit({sendOrder}, responseType, orchard, partial);
 ```
