@@ -1,5 +1,5 @@
 # smoothieTime
-JS Framework for Dynamic content and Data
+JS Framework for Dynamic Content and Data
 
 Copyright (c) <year> <copyright holders>
 
@@ -9,10 +9,11 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+---------------------------------------
 
-//SmothieTime is a JS Framework for Dynamic web Applications.  The goal of smoothieTime is to create a simple way for developers to sync up with their backends in a flexible manner utilizing jquery AJAX.
+The goal of smoothieTime is to create a simple way for developers to sync up with their backends in a flexible manner utilizing jquery AJAX.
 
-also see the example.html file for example markup of smoothieTime integration.
+See the example.html file for example markup of smoothieTime integration.
 
 ---------------------------------------
 ----------------USAGE------------------
@@ -27,6 +28,21 @@ titleBased is used for content.  Each property should have the same name as a pr
 outerScript works just the same except instead of distributing content, it distributes JavaScript.  Just line up the property names to your backend object and smoothie time will JSON parse the value of each property and place it into the corresponding outerScript property.
 
 Since smoothieTime is asyncrounous to let you refresh content when needed, you can listen for the 'blenddone' event which will be triggered when smothieTime has finished parsing your JSON response.
+
+After all of the Fruitlist and setting setup (see below).  You can make a call to your server to grab your JSON using the 'orchardVisit' function.  Its parameters are as follows.
+
+- sendOrder = the data to send
+- responseType = datatype of response (JSON or JSONP)
+- orchard = url
+- partial = won't show loadng screen if only updating some content.  This only applies if the loading screen is enabled.
+```javascript
+orchardVisit({sendOrder}, responseType, orchard, partial);
+```
+
+Example:
+```javascript
+orchardVisit({}, 'json', 'example.com/json.php', 0);
+```
 
 ----------------------------------------
 -------------LOADING SHIELD-------------
