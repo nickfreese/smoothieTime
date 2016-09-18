@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="smoothieTime.css"></link>
+</head>
+<body>
+
+    <div id="page-title"></div>
+    
+    <div id="some-content"></div>
+    
+    <div id="some-content-again"></div>
+    
+    <div id="display-title-bottom"></div>
+    
+    <style id="server-side-styles"></style>
+    
+<script>
+//setting for SmoothieTime JS.  Currently you can turn the default CSS loading screen on or off
+var smoothieSettings = {
+    loadingScreen: true
+};
+
+
+//main the config object
+var fruitList = {
+// line up property names with dom elements
+    titleBased: {
+        apple:["page-title", "display-title-bottom"],
+        pear:["some-content"],
+        banana:["some-content-again"],
+        styles:["server-side-styles"]
+	   },
+// the outerScript object is for dynamically populating js to the document.  These scripts can be accessed by calling "fruitList.outerScript.myScriptName".  replacing myScriptName with the name of your script.
+    outerScript: {
+        yogurt:{}
+    }
+
+}
+</script>
+<!-- Include smoothieTime.js below your settings and FruitList -->
+<script src="smoothieTime.js"></script>
+<script>
+toggleShield(1);//1 set shield to on.  0 zets it to off
+    
+orchardVisit({}, 'json', 'http://nbbeds.com/mattress-finder/json.php', 0);
+</script>
+</body>
+</html>
