@@ -16,7 +16,7 @@ The goal of smoothieTime is to create a simple way for developers to sync up wit
 See the example.html file for example markup of smoothieTime integration.
 
 ---------------------------------------
-***USAGE***------------------
+***USAGE***
 ---------------------------------------
 
 What smoothieTime Does:  You build out the "Fruitlist" Object which smoothieTime uses to apropriately parse and distribute your content/data.
