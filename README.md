@@ -1,4 +1,4 @@
-# smoothieTime
+# Smoothie Time
 JS Framework for Dynamic Content and Data
 
 ---------------------------------------
