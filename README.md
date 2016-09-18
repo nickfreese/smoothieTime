@@ -35,11 +35,11 @@ Since smoothieTime is asyncrounous to let you refresh content when needed, you c
 *REQUIRED!!! include the following above smoothieTime.js:
 
 /*------------------------*/
-
+,,,
 var smoothieSettings = {
     loadingScreen: false
 };
-
+,,,
 /*------------------------*/
 
 smoothieTime comes with a built in loading shield.  To use the shield, set the 'loadingScreen' property to 'true'.  The shield is completely CSS driven Its styles are included in  smoothieTimeCSS.  Feel free to edit to match your brand.
@@ -53,7 +53,7 @@ since if you would like to add either your own loading shield or create a loadin
 ------------------------------------------------------------------------------------------
 ------------------------EXAMPLE OF FRUITLIST AND SETTINGS------------------------------
 ------------------------------------------------------------------------------------------
-
+,,,
 var smoothieSettings = {
     loadingScreen: true
 };
@@ -74,7 +74,7 @@ var fruitList = {
     }
 
 }
-
+,,,
 -------------------------------------------------------------------------------------------
 --------------------------------HAVE FUN!--------------------------------------------------
 -------------------------------------------------------------------------------------------
