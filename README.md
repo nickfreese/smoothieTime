@@ -33,6 +33,7 @@ Since smoothieTime is asyncrounous to let you refresh content when needed, you c
 ------------------------------------------------------------------
 
 *REQUIRED!!! include the following above smoothieTime.js:
+
 /*------------------------*/
 
 var smoothieSettings = {
